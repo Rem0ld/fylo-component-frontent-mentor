@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section class="container">
+    <div class="container__one rounded rounder-right">
+      <div class="container__logo">
+        <img src="./images/logo.svg" alt="Logo Fylo">
+      </div>
+      <div class="icons">
+        <div class="rounded">
+          <img class="icon" src="./images/icon-document.svg" alt="Document">
+        </div>
+        <div class="rounded">
+          <img class="icon" src="./images/icon-folder.svg" alt="Folder">
+        </div>
+        <div class="rounded">
+          <img class="icon" src="./images/icon-upload.svg" alt="Upload">
+        </div>
+      </div>
+    </div>
+    <div class="container__second rounded">
+      <p class="pale">You’ve used <strong class="pale">815 GB</strong> of your storage</p>
+      <div class="download-bar">
+        <div class="bar">
+          <div id="fill" class="fill">
+            <div class="cursor"></div>
+          </div>
+        </div>
+        <span class="left pale">0 GB</span>
+        <span class="right pale">1000 GB</span>
+        <div class="clearfix"></div>
+      </div>
+      <div class="giga-left rounded border-darker-blue">
+        <div>
+          <span id="gigas" class="darker-blue">185</span>
+          <h2 class="grayish-blue"> GB Left</h2>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Rem0ld">Pierre Lovergne</a>.
+  </div>
+  <script>
+    let gigas = document.getElementById("gigas").innerText;
+    let fill = document.getElementById("fill");
+
+    fill.style.width = (1000 - Number(gigas)) / 10 + "%";
+  </script>
+</body>
+
+</html>
