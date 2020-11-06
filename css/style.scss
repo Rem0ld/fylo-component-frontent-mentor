@@ -174,21 +174,6 @@ body {
   }
 }
 
-.giga-left::after {
-  content: "";
-  display: block;
-  width: 35px;
-  height: 40px;
-  transform: rotate(30deg) skew(30deg);
-  position: absolute;
-  right: -4px;
-  bottom: -7px;
-  z-index: -5;
-  background-color: white;
-  border-bottom: 1px solid black;
-  border-right: 2px solid black;
-}
-
 .left {
   float: left;
 }
@@ -246,5 +231,20 @@ body {
     position: absolute;
     top: -29%;
     left: 62%;
+  }
+
+  .giga-left::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 40px;
+    transform: rotate(30deg) skew(30deg);
+    position: absolute;
+    right: -4px;
+    bottom: -7px;
+    z-index: -5;
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
   }
 }
