@@ -187,6 +187,10 @@ body {
   color: #3e52a3;
 }
 
+.disabled {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     background-image: url("../images/bg-desktop.png");
@@ -198,7 +202,6 @@ body {
     flex-direction: row;
     width: 75%;
     margin: 0 auto;
-    padding-top: 8em;
   }
   .container__one {
     height: 226px;
